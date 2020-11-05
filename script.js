@@ -5,13 +5,16 @@ var btn2 = document.getElementById("custom")
 var transfer = document.getElementById("Quick")
 var inputs = document.querySelectorAll("input")
 var currentVal = 10;
+var heading = document.getElementById("quick")
 
 btn1.addEventListener("click",function(){
     container.classList.remove("all1")
+    heading.classList.remove("all1")
     table.classList.add("all1")
 })
 btn2.addEventListener("click",function(){
     container.classList.add("all1")
+    heading.classList.add("all1")
     table.classList.remove("all1")
 })
      var row=11
@@ -44,7 +47,6 @@ btn2.addEventListener("click",function(){
         inputs.forEach(input => input.value = "")
 
           }
-
 
     })
 
