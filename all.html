@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Trispace&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Trispace', sans-serif;
+    }
+    .odd{
+        background-color: rgba(210, 105, 30, 0.226);
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        height: 110px;
+        background: rgba(0, 0, 0, 0.616);
+        color: wheat;
+        position: relative;
+        line-height: 2;
+        border: 2px black solid;
+    }
+    nav h1{
+        font-size:1.8vw;
+    }
+    nav div{
+        display: flex;
+        justify-content: space-evenly;
+        width: 30%;
+        text-decoration: none !important;
+        color: red;
+        height: 50px;
+    }
+    .out{
+        width:100vw;
+        background-image: url("https://images.pexels.com/photos/414645/pexels-photo-414645.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+        background-position: center;
+        background-size:cover;
+        height: 100vh;
+    }
+    nav img{
+        width:50px;
+        padding: 0;
+        position: absolute;
+        left: 28%;
+        top: 8px;
+    }
+    span{
+        text-decoration: none;
+        color: rgb(20, 206, 159);
+        display: flex;
+        align-items: center;
+        width: auto;
+         padding: 5px;
+    }
+ 
+    td,th{
+        padding: 15px;
+        width: 100vw;
+        text-align: center;
+    }   
+          tr td:nth-child(1){
+           padding: 0px;
+     }  
+     input:hover{
+         box-shadow: 0px 0px 15px rgb(209, 16, 190);
+     }
+
+
+          .container{
+        width:25%;
+        height: 300px;
+        background-color: rgba(129, 206, 99,0.6);
+        position: absolute;
+        top:50%;
+        left:40%;
+        transform: translate(-50%,-50%);
+        border-radius: 55px 0px 55px 0px;
+        text-align: center;
+        min-width: 320px;
+
+    }
+    main h1{
+        position: absolute;
+
+        left:25%;
+        top: 25%;
+    }
+  
+    .container:hover{
+        box-shadow: 0px 0px 20px red;
+    }
+    input{
+        padding: 5px;
+        margin:45px 0px 10px auto;
+        border-radius: 15px;
+        text-align: center;
+        outline: none;
+        border: none;
+    }
+    label{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    #name{
+        margin-left: 25px;
+    }
+   .container Button{
+        padding: 5px;
+        margin: 15px;
+        border-radius: 15px 0px 15px 0px;
+        outline: none;
+    }
+    button:hover{
+        box-shadow:0px 0px 15px yellow;
+        outline: none;
+    }
+    .navbar button{
+        padding: 15px;
+        background: transparent;
+        border: none;
+        color: turquoise;
+        font-size: 1rem;
+    }
+   .all1{
+        display:none;
+    }
+    table td:hover{
+        background-color: rgba(100, 218, 32, 0.442);
+    }
+
+</style>
+<body>
+    <div class="out">
+<nav>
+<h1>The Sparks Founders Bank</h1>
+<img src="https://www.thesparksfoundationsingapore.org/images/logo_small.png" alt="logo">
+<div class="navbar">
+   <button id="hom">Home</button> 
+   <button id="custom">All Coustombers</button> 
+   <button>Contact Us</button> 
+</div>
+</nav> 
+
+
+<main>
+    <h1>Quick Money Transfer Here</h1>
+    <div class="container" id="contain">
+        <label for="name">Name</label><input type="text" id="name" placeholder="name"><br>
+        <label for="Email Id">Email Id</label><input type="text" id="Email" placeholder="Email"><br>
+        <label for="Amount">Amount</label><input type="text" id="Amount" placeholder="Amount">
+        <Button id="Quick">Transfer Money</Button>
+        </div>
+    <table id="all" class="all1" border="2px">
+            <tr class="odd">
+                <th>Serial No.</th>
+                <th>Sender Name</th>
+                <th>Sender Mail Id</th>
+                <th>Amount</th>
+                <th>Transection State</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Pradeep</td>
+                <td>pradeeprathor3110@gmail.com</td>
+                <td>5000</td>
+                <td>success</td>
+            </tr>
+            <tr class="odd">
+                <td>2</td>
+                <td>Naveen</td>
+                <td>rathornaveen@gmal.com</td>
+                <td>200</td>
+                <td>success</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Neha Rathor</td>
+                <td>neham14@gmai.com</td>
+                <td>7000</td>
+                <td>success</td>
+            </tr>
+            <tr class="odd">
+                <td>4</td>
+                <td>Rani Rathore</td>
+                <td>queengam12@gmail.com</td>
+                <td>1000</td>
+                <td>success</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Divya Negi</td>
+                <td>divyasing@gmail.com</td>
+                <td>5000</td>
+                <td>success</td>
+            </tr>
+            <tr class="odd">
+                <td>6</td>
+                <td>Prince Sharma</td>
+                <td>Priynreasd6566@gmail.com</td>
+                <td>17700</td>
+                <td>success</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Jatin Khatri</td>
+                <td>jatinkh25@gmail.com</td>
+                <td>15000</td>
+                <td>success</td>
+            </tr>
+            <tr class="odd">
+                <td>8</td>
+                <td>Shudhanshu Chaparwall</td>
+                <td>sharmchap@gmail.com</td>
+                <td>1000</td>
+                <td>success</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Ashvini</td>
+                <td>ashviniiiaa@gmail.com</td>
+                <td>4200</td>
+                <td>success</td>
+            </tr>
+            <tr class="odd">
+                <td>10</td>
+                <td>Yash Yadav</td>
+                <td>actualyash@gmail.com</td>
+                <td>15000</td>
+                <td>success</td>
+            </tr>
+    </table>
+</main>
+</div>
+</body>
+<script  src="./script.js"></script>
+</html>
